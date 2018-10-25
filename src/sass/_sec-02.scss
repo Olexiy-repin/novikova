@@ -1,0 +1,191 @@
+#sec-02 {
+  padding-top: 3.6rem;
+  padding-bottom: 3rem;
+}
+
+.sec-02__title-container {
+  text-align: center;
+}
+
+.sec-02__under-title-text {
+  font-family: SansB;
+  font-size: pxToRem(16px);
+  color: #4c4eac;
+  margin-bottom: .7rem;
+}
+
+.sec-02__title {
+  font-family: GothaM;
+  font-size: pxToRem(32px);
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: .9rem;
+}
+
+.sec-02__before-title-text {
+  font-family: SansR;
+  font-size: pxToRem(18px);
+  line-height: 1.4;
+  color: #7d7d81;
+}
+
+.sec-02__before-title-text span {
+  color: #000;
+}
+
+.title-col {
+  margin-bottom: 2.3rem;
+}
+
+.sec-02__card {
+  text-align: center;
+  margin: auto;
+  width: 77%;
+  padding: 2.4rem 0 0 0;
+  height: 14.9rem;
+  border: 2px solid #e0e1f9;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sec-02__card:hover {
+  transition: all .3s linear;
+  border: 2px solid #656ae3;
+}
+
+.sec-02__card-img {
+  margin-bottom: 1.2rem;
+}
+
+.sec-02__card-logo {
+  width: 3.9rem;
+  height: 3.9rem;
+  fill: #5e5e5e;
+}
+
+.sec-02__card-text {
+  font-family: SansR;
+  font-size: pxToRem(16px);
+  line-height: 1.2;
+}
+
+.card-col {
+  margin-bottom: .6rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#sec-02 .row [class*=col-]:last-of-type .row:first-of-type {
+  margin-bottom: 3.5rem;
+}
+
+.sec-02__quote {
+  position: relative;
+  font-family: GothaR;
+  font-size: pxToRem(20px);
+  color: #333333;
+  line-height: 1.6;
+  padding-left: 2.5rem;
+  span {
+    font-family: GothaB;
+  }
+  &::before {
+    display: inline-block;
+    content: url("img/sec-02/quote.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #sec-02 {
+    padding-top: 4.8rem;
+  }
+
+  .sec-02__under-title-text {
+    margin-bottom: .6rem;
+  }
+
+  .sec-02__title {
+    font-size: pxToRem(30px);
+    margin-bottom: 1.2rem;
+    padding: 0 1rem;
+    br {
+      display: none;
+    }
+  }
+
+  .sec-02__before-title-text {
+    padding: 0 7.1rem;
+  }
+
+  .title-col {
+    margin-bottom: 2.4rem;
+  }
+
+  .sec-02__card {
+    width: auto;
+    margin: 0;
+  }
+
+  .card-col {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #sec-02 {
+    padding-top: 12.1rem;
+    padding-bottom: 5rem;
+    background-image: url("img/sec-02/bg-lg.png");
+    background-position: top;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .sec-02__title-container {
+    text-align: left;
+  }
+
+  .sec-02__under-title-text {
+    margin-bottom: 1.5rem;
+  }
+
+  .sec-02__title {
+    padding: 0 4rem 0 0;
+    margin-bottom: .8rem;
+    line-height: 1.2;
+    br {
+      display: block;
+    }
+  }
+
+  .sec-02__before-title-text {
+    padding: 0 1.1rem 0 0;
+  }
+
+  #sec-02 .col-xl-8 .row {
+    padding-top: .4rem;
+  }
+
+  .sec-02__title-container {
+    padding-left: 5.4rem;
+  }
+
+  .card-col {
+    flex: 0 0 30.4%;
+  }
+
+  #sec-02 .row [class*=col-]:last-of-type .row:first-of-type {
+    padding-left: 2.2rem;
+  }
+  .sec-02__quote {
+    padding-left: 5rem;
+    padding-right: 5.4rem;
+    &::before {
+      left: 2.2rem;
+    }
+  }
+}

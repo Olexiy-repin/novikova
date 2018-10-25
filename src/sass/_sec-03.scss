@@ -1,0 +1,139 @@
+#sec-03 {
+  padding-top: 3.2rem;
+  padding-bottom: 1rem;
+}
+
+.sec-03__picture {
+  display: block;
+  text-align: center;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.sec-03__bottom-title {
+  font-family: GothaM;
+  font-size: pxToRem(40px);
+  font-weight: 400;
+}
+
+.sec-03__bottom-col {
+  margin-bottom: 2.2rem;
+}
+
+.sec-03__bottom-title {
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.sec-03__bottom-description {
+  position: relative;
+  font-family: SansR;
+  font-size: pxToRem(18px);
+  padding-left: 4rem;
+  margin-bottom: 1.2rem;
+  &::before {
+    display: block;
+    content: url("img/sec-03/share.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+  .sec-03__bottom-text {
+    font-family: SansR;
+    font-size: pxToRem(16px);
+    color: #747478;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .sec-03__list-title {
+    font-family: GothaR;
+    font-size: pxToRem(20px);
+    margin-bottom: .7rem;
+  }
+
+  .sec-03__list {
+    font-family: SansR;
+    font-size: pxToRem(16px);
+    color: #5451c3;
+    padding-left: 1.3rem;
+  }
+
+  .sec-03__list-paragraph {
+    color: #747478;
+    line-height: 1.5;
+    span {
+      font-family: SansB;
+    }
+  }
+
+  .sec-03__list-item {
+    margin-bottom: .6rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+@media (min-width: 768px) {
+  #sec-03 {
+    padding-top: 5rem;
+  }
+
+  .sec-03__list-item {
+    padding-right: 5rem;
+  }
+
+  .sec-03__bottom-title {
+    font-size: pxToRem(40px);
+    margin-bottom: 1.5rem;
+  }
+
+  .sec-03__bottom-col {
+    margin-bottom: 3.2rem;
+  }
+
+  .sec-03__picture {
+    img {
+      width: auto;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .sec-03__picture {
+    left: -41%;
+    img {
+      display: block;
+      // width: 800px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #sec-03 {
+    padding-top: 6.8rem;
+    background-image: url("img/sec-03/bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .sec-03__picture {
+    position: absolute;
+    top: 0;
+    left: -44.3%;
+  }
+
+  .sec-03__bottom-title-container {
+    padding-left: 6.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .sec-03__bottom-text {
+    padding-right: 9.1rem;
+  }
+}
