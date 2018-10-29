@@ -27,4 +27,5 @@ $(".popup-youtube").magnificPopup({
   mainClass:"mfp-fade",
   removalDelay:160,
   preloader:!1,
-  fixedContentPos:!1});
+  fixedContentPos:!1
+});
