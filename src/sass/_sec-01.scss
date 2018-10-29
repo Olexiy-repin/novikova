@@ -1,12 +1,57 @@
 #sec-01 {
   padding-top: 1.4rem;
-  padding-bottom: 17.6rem;
   background-color: #a7144a;
+  .row:last-of-type {
+    [class*=col-]:first-of-type {
+      position: relative;
+    }
+  }
 }
 
 .sec-01__logo {
   display: block;
   width: 7rem;
+}
+
+.sec-01__play-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 8.1rem;
+  position: absolute;
+  right: 7.8rem;
+  top: 22.6rem;
+}
+
+.sec-01__play-btn {
+  display: block;
+  width: 3.9rem;
+  height: 3.9rem;
+  border-radius: 50%;
+  background-color: #ff5b94;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    .sec-01__play-btn-click {
+      transition: all .5s linear;
+      transform: scale(.9);
+    }
+  }
+}
+
+.sec-01__play-btn-text {
+  font-family: OpenB;
+  font-size: pxToRem(20px);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.sec-01__play-btn-click {
+  border: 8px solid transparent;
+  border-left: 8px solid #fff;
+  margin-left: 1.8rem;
+
 }
 
 .menu-btn {
@@ -22,9 +67,9 @@
   border-radius: 5px;
   letter-spacing: 2px;
   &:hover {
-    background-color: #fc0;
+    background-color: #fff;
     transition: all .5s linear;
-    color: #000;
+    color: #900b3c;
   }
 }
 
@@ -36,7 +81,6 @@
   display: flex;
   align-items: center;
   padding-left: 1rem;
-  margin-bottom: 2.2rem;
 }
 
 .timer-wrapper {
@@ -219,7 +263,7 @@
   }
 
   #sec-01 {
-    padding-bottom: 18.6rem;
+    padding-bottom: 23.6rem;
   }
 
   #sec-01 .row [class*=col-]:first-of-type {
@@ -303,6 +347,10 @@
     .row:first-of-type {
       margin-bottom: 2rem;
     }
+  }
+
+  .sec-01__play-btn-container {
+    top: 9.6rem;
   }
 
   .sec-01__logo {
@@ -405,7 +453,7 @@
 
   @media (min-width: 1200px) {
     #sec-01 {
-      padding-bottom: 11.9rem;
+      padding-bottom: 11.7rem;
       background-image: url("img/sec-01/bg-lg.png");
       background-position: top;
       background-size: auto;

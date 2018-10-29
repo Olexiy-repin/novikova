@@ -18,6 +18,13 @@ function updater(e, r, t, o) {
 }
 window.onload = function() {
     updater(document.querySelector(".days"), document.querySelector(".hours"), document.querySelector(".minutes"), document.querySelector(".sec")),
-    updater(document.querySelector(".days-02"), document.querySelector(".hours-02"), document.querySelector(".minutes-02"), document.querySelector(".sec-02")),
-    updater(document.querySelector(".days-03"), document.querySelector(".hours-03"), document.querySelector(".minutes-03"), document.querySelector(".sec-03"))
+    updater(document.querySelector(".days-02"), document.querySelector(".hours-02"), document.querySelector(".minutes-02"), document.querySelector(".sec-02"))
 };
+
+$(".popup-youtube").magnificPopup({
+  disableOn:700,
+  type:"iframe",
+  mainClass:"mfp-fade",
+  removalDelay:160,
+  preloader:!1,
+  fixedContentPos:!1});

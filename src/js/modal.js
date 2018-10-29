@@ -38,25 +38,25 @@
 
 // POPUP
 (() => {
-    $('.sec-06__list-item').on('click', (event) => {
-      if($('.sec-06__item-content').hasClass('show')) {
-        $('.sec-06__item-content').removeClass('show');
-        $('.sec-06__item-title').removeClass('show');
+    $('.sec-03__list-item').on('click', (event) => {
+      if($('.sec-03__item-content').hasClass('show')) {
+        $('.sec-03__item-content').removeClass('show');
+        $('.sec-03__item-title').removeClass('show');
       } else {
-        $('.sec-06__item-content').removeClass('show');
-        $('.sec-06__item-title').removeClass('show');
-        if ($(event.target).hasClass('sec-06__item-title')) {
-          let curentItem = $(event.currentTarget).find('.sec-06__item-content');
+        $('.sec-03__item-content').removeClass('show');
+        $('.sec-03__item-title').removeClass('show');
+        if ($(event.target).hasClass('sec-03__item-title')) {
+          let curentItem = $(event.currentTarget).find('.sec-03__item-content');
 
           event.stopPropagation();
           curentItem.addClass('show');
-          $(event.currentTarget).find('.sec-06__item-title').addClass('show');
+          $(event.currentTarget).find('.sec-03__item-title').addClass('show');
         }
       }
     });
 
     $(window).on('click', () => {
-      $('.sec-06__item-content').removeClass('show');
-      $('.sec-06__item-title').removeClass('show');
+      $('.sec-03__item-content').removeClass('show');
+      $('.sec-03__item-title').removeClass('show');
     });
 })();
