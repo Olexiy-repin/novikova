@@ -586,6 +586,9 @@ input[type="radio"]:checked+label {
 
   #sec-05 .logo-container {
     margin-bottom: 1.1rem;
+    img {
+      width: pxToRem(138px);
+    }
   }
 
   .sec-05__bottom-telephone-block {
@@ -770,7 +773,7 @@ input[type="radio"]:checked+label {
     display: flex;
     align-items: center;
     margin-top: 6.2rem;
-    margin-bottom: 8.4rem;
+    margin-bottom: 4rem;
     padding: 0 5rem 0 6.3rem;
   }
 
