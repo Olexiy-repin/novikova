@@ -158,10 +158,16 @@
   padding: 0.7rem 0.6rem 0.5rem;
   text-decoration: none;
   text-align: center;
+  position: relative;
   &:hover {
     transition: all 0.5s linear;
-    box-shadow: 0 18px 35px 0 #900b3c;
+    background-color: #ff5b94;
+    color: #fff;
   }
+}
+
+.btn-span {
+  margin-left: 1rem;
 }
 
 .sec-01__under-text {
@@ -183,7 +189,7 @@
   font-family: OpenR;
   font-size: pxToRem(20px);
   color: #fff;
-  padding-right: 16rem;
+  padding-right: 12rem;
   line-height: 1.6;
   margin-bottom: 1.8rem;
   text-align: center;
@@ -242,20 +248,15 @@
   font-size: 1rem;
   color: #ff92ba;
   margin-bottom: .9rem;
+  &:first-of-type {
+    font-family: OpenB;
+  }
   &:last-of-type {
     margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
-  .side-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
   .sec-01__side-paragraph {
-    width: 48%;
     text-align: center;
     &:last-of-type {
       margin-bottom: 0;
@@ -263,7 +264,15 @@
   }
 
   #sec-01 {
-    padding-bottom: 23.6rem;
+    padding-bottom: 72.6rem;
+    background-image: url("img/sec-01/novikova.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    .row:first-of-type [class*=col-]:first-of-type {
+      position: absolute;
+      bottom: -41rem;
+    }
   }
 
   #sec-01 .row [class*=col-]:first-of-type {
@@ -343,7 +352,11 @@
 
 @media (min-width: 768px) {
   #sec-01 {
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
+    background-image: url("img/sec-01/bg-lg.png");
+    background-position: 58% 100%;
+    background-size: 200%;
+    background-repeat: no-repeat;
     .row:first-of-type {
       margin-bottom: 2rem;
     }
@@ -440,10 +453,9 @@
 
   .sec-01__bottom-btn {
     padding: 0.9rem 0;
-    width: 16.4rem;
+    width: 18.1rem;
     &:hover {
       transition: all 0.5s linear;
-      box-shadow: 0 18px 35px 0 #900b3c;
     }
   }
 
@@ -453,7 +465,7 @@
 
   @media (min-width: 1200px) {
     #sec-01 {
-      padding-bottom: 11.7rem;
+      padding-bottom: 6rem;
       background-image: url("img/sec-01/bg-lg.png");
       background-position: top;
       background-size: auto;
@@ -470,7 +482,7 @@
       }
 
       .row:first-of-type {
-        margin-bottom: 3.5rem;
+        margin-bottom: 1rem;
       }
 
       .row:last-of-type {
@@ -510,7 +522,7 @@
     }
 
     .sec-01__header {
-      margin-bottom: 7.2rem;
+      margin-bottom: 4.2rem;
     }
 
     .menu-btn {
