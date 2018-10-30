@@ -398,6 +398,11 @@ input[type="radio"]:checked+label {
         top: 12rem;
       }
     }
+    .row:last-of-type {
+      [class*=col-]:first-of-type {
+        padding: 0;
+      }
+    }
   }
     #sec-05 .row:first-of-type .sec-05__text-card-description:last-of-type {
       margin-bottom: 19.2rem;
@@ -407,6 +412,7 @@ input[type="radio"]:checked+label {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 0;
     }
 }
 
@@ -643,7 +649,7 @@ input[type="radio"]:checked+label {
   }
 
   #sec-05 .timer-container>.timer-container {
-    margin-left: 11.9rem;
+    margin-left: 11.7rem;
   }
 
   #sec-05 .sec-01__content-container{

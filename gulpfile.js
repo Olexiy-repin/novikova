@@ -47,7 +47,6 @@ gulp.task('css', function(){
     .pipe(mmq({
       log: true
     }))
-    .pipe(cssnano())
     .pipe(gulp.dest('./dist'))
       .pipe(browserSync.reload({
         stream: true

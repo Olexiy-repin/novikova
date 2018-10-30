@@ -32,10 +32,12 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: all .5s linear;
   &:hover {
+    background-color: #a7144a;
     .sec-01__play-btn-click {
       transition: all .5s linear;
-      transform: scale(.9);
+      transform: scale(.8);
     }
   }
 }
@@ -334,7 +336,7 @@
     color: #ff92ba;
     span {
       font-size: pxToRem(30px);
-      margin-left: 1.5rem;
+      margin-left: .7rem;
     }
   }
 
